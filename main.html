@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <title>Song recommendation</title>
+    <link href="song.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="overlay">
+        <div class="random1">
+        <h1 style="color: white; font-size: 4vw; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: 2; text-align: center;">HOME</h1>
+        <div class="card1">
+            <div class="img"></div>
+              <div class="info">
+                <span>Ashriya</span>
+                <p>Belly Dancer</p>
+              </div>
+              <input type="button" value="PLAY !" class="btn1" id="pewds_play" onclick="play()">
+            </div>
+            <br>
+            <div class="card1">
+              <div class="img" style="background-image: url(https://i1.sndcdn.com/artworks-000206594560-els5ee-t500x500.jpg);background-position-x: -7.5vw; "></div>
+                <div class="info">
+                  <span>Tuyo!</span>
+                  <p>Rodrigo Armante</p>
+                </div>
+                <input type="button" value="PLAY !" class="btn1" id="tuyo" onclick="play6()">
+              </div>
+      </div>
+      <div class="card1" style="position: relative; top: -84vh; left: 24vw;">
+        <div class="img" style="background-image: url(https://i1.sndcdn.com/artworks-U2zGlotNIu4VS0ig-pZj4cg-t500x500.jpg);background-position-x: -7.2vw; "></div>
+          <div class="info">
+            <span>TNT</span>
+            <p>AC/DC</p>
+          </div>
+          <input type="button" value="PLAY !" class="btn1" id="tnt" onclick="play2()">
+        </div>
+        <br>
+        <div class="card1" style="position: relative; top: -84vh; left: 24vw;">
+          <div class="img" style="background-image: url(https://i1.sndcdn.com/artworks-1LJsK2gdfybPpmtE-YdybeQ-t500x500.jpg);background-position-x: -7.2vw; "></div>
+            <div class="info">
+              <span>Mercury</span>
+              <p>Ghostemane</p>
+            </div>
+            <input type="button" value="PLAY !" class="btn1" id="mercury" onclick="play7()">
+          </div>
+        <div class="card1" style="position: relative; top: -163vh; left: 42vw;">
+          <div class="img" style="background-image: url(https://m.media-amazon.com/images/M/MV5BN2U3NTJjZjEtNjRjNC00MGUzLWE3OTQtYWQ5MWRhODBjZDRhXkEyXkFqcGdeQXVyNDEyNjEzOTg@._V1_.jpg);background-position-x: 9vw; "></div>
+            <div class="info">
+              <span>Feeling Good</span>
+              <p>Michael Bublé</p>
+            </div>
+            <input type="button" value="PLAY !" class="btn1" id="feeling_good" onclick="play3()">
+          </div><br>
+          <div class="card1" style="position: relative; top: -163vh; left: 42vw;">
+          <div class="img" style="background-image: url(https://images.genius.com/f204f29a9776df40a6d55a9c897a091b.1000x563x1.jpg);background-position-x: -2.5vw; "></div>
+            <div class="info">
+              <span>1994</span>
+              <p>Uniq Poet</p>
+            </div>
+            <input type="button" value="PLAY !" class="btn1" id="1994" onclick="play8()">
+          </div>
+          <div class="card1" style="position: relative; top: -242.5vh; left: 60vw;">
+          <div class="img" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNDFiMjA2YWYtMmRiYi00MmJkLTk0ZWEtZjg3YTU3NTZkZTMyXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_.jpg);background-position-x: 0vw; "></div>
+            <div class="info">
+              <span>Look at Me</span>
+              <p>xxxtentacion</p>
+            </div>
+            <input type="button" value="PLAY !" class="btn1" id="look_at_me" onclick="play4()">
+          </div><br>
+           <div class="card1" style="position: relative; top: -242vh; left: 60vw;">
+          <div class="img" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/0/08/Juicy_Robbery.png);background-position-x: 0vw; "></div>
+            <div class="info">
+              <span>Robbery</span>
+              <p>Juice WRLD</p>
+            </div>
+            <input type="button" value="PLAY !" class="btn1" id="robbery" onclick="play9()">
+          </div>
+          <div class="card1" style="position: relative; top: -322vh; left: 78vw;">
+          <div class="img" style="background-image: url(https://i.ytimg.com/vi/89n42tHMWqo/maxresdefault.jpg);background-position-x: -3vw; "></div>
+            <div class="info">
+              <span>Kagbeni</span>
+              <p>Arthur Gunn</p>
+            </div>
+            <input type="button" value="PLAY !" class="btn1" id="kagbeni" onclick="play5()">
+          </div>
+        </div><br>
+        <div class="card1" style="position: relative; top: -322vh; left: 78vw;">
+          <div class="img" style="background-image: url(https://i.ytimg.com/vi/89n42tHMWqo/maxresdefault.jpg);background-position-x: -3vw; "></div>
+            <div class="info">
+              <span>Kagbeni</span>
+              <p>Arthur Gunn</p>
+            </div>
+            <input type="button" value="PLAY !" class="btn1" id="kagbeni" onclick="play5()">
+          </div>
+        </div>
+        </div>
+          <audio id="audio_controls" controls="controls" src="">
+          </audio>
+  </div>
+    </div>
+  </body>
+  <script src="songplay.js"></script>
+</html>
