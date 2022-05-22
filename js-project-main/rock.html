@@ -1,0 +1,46 @@
+<html >
+    <head>
+        <title>Rock Song Recommendation</title>
+        <link rel="stylesheet" href="song.css">  
+    </head>
+    <body>
+        <div class="rock">
+        <h1 style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: 2; font-size: 5vw; text-align: center;">ROCK SONGS</h1>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNavrock()">&times;</a>
+            <a href="rock.html">Rock</a>
+            <a href="#">Grunge</a>
+            <a href="#">Rythm and Blues</a>
+            <a href="#">Country</a>
+            <a href="pop.html">Pop</a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <a href="main.html">HOME</a>
+          </div>
+          <div id="main2">
+            <button class="open_genre" onclick="openNavrock()">&#9776; Choose Genre</button>
+          </div>  
+        <div class="list">
+          
+        </div>
+        </div>
+        <audio id="audio_controls" controls="controls" src="">
+        </audio>
+    </body>
+    <script src="songplay.js"></script>
+    <script>
+        var rock_list=new Array()
+        rock_list[0]='<div class="sponsor" style="z-index: 1"><button class="lists" ><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Blacksummer.png" class="song_thumb" style="width: 6vw;height: 13vh;"><h5>Black Summer</h1><p>Red Hot Chilli Paper</p><input type="button" value="PLAY !" id="bs" onclick="bs()"></button></div>',
+        rock_list[1]='<div class="sponsor" style="z-index: 1"><button class="lists" ><img src="https://i.pinimg.com/originals/9f/00/ec/9f00ec9f0f668b9f4b3e9b00d842f2f2.png" class="song_thumb"><h5>Back In Back</h1><p>AC/DC</p><input type="button" value="PLAY !" id="bib" onclick="bib()"></button></div>';    
+        rock_list[2]='<div class="sponsor" style="z-index: 1"><button class="lists" ><img src="https://upload.wikimedia.org/wikipedia/en/3/3f/LinkinParkIntheEnd.jpg" class="song_thumb"><h5>In The End</h1><p>Linkin Park</p><input type="button" value="PLAY !" id="ite" onclick="ite()"></button></div>';    
+        var i=0
+        var random
+        while (i<rock_list.length){
+            random=Math.floor(Math.random()*rock_list.length)
+            if (rock_list[random]!="selected"){
+                document.writeln(rock_list[random])
+                rock_list[random]="selected"
+                i++
+            }
+        }
+    </script>
+</html>
